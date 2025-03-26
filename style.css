@@ -1,0 +1,110 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    font-size:62.5%;
+}
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:url("image/Road.jpg") no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-position: 0px -270px;
+    animation: carasoul 180s linear infinite;
+}
+@keyframes carasoul{
+    0%{
+        background: url("image/Carasoul/0.jpg") no-repeat center center/cover;
+    }
+    10%{
+        background: url("image/Carasoul/1.jpg") no-repeat center center/cover; 
+    }
+    20%{
+        background: url("image/Carasoul/2.jpg") no-repeat center center/cover; 
+    }
+    30%{
+        background: url("image/Carasoul/3.jpg") no-repeat center center/cover; 
+    }
+    40%{
+        background: url("image/Carasoul/4.jpg") no-repeat center center/cover; 
+    }
+    50%{
+        background: url("image/Carasoul/5.jpg") no-repeat center center/cover; 
+    }
+    60%{
+        background: url("image/Carasoul/6.jpg") no-repeat center center/cover; 
+    }
+    70%{
+        background: url("image/Carasoul/7.jpg") no-repeat center center/cover; 
+    }
+    80%{
+        background: url("image/Carasoul/8.jpg") no-repeat center center/cover; 
+    }
+    90%{
+        background: url("image/Carasoul/9.jpg") no-repeat center center/cover; 
+    }
+    100%{
+        background: url("image/Carasoul/10.jpg") no-repeat center center/cover; 
+    }
+}
+
+#calculator-body{
+    padding:2rem;
+    border:.2rem solid #000;
+    border-radius: 1.6rem;
+    box-shadow: 0rem .3rem 1.5rem rgba(0, 0, 0, 0.8);
+    background: rgba(0,0,0,0.7);
+}
+input[type="text"]{
+    width:32rem;
+    padding:2rem;
+    margin:1rem;
+    background: rgba(255,255,255,0.5);
+    box-shadow: inset 0rem 0rem .8rem rgba(0,0,0,0.4);
+    font-size:6.5rem;
+    text-align:right;
+    color:#fff;
+    border:.2rem solid rgba(0,0,0,0.3);
+    border-radius:1.6rem;
+    text-shadow: 0rem .1rem .5rem rgba(0,0,0,0.2);
+    outline: none;
+}
+input[type="text"]::placeholder{
+    color:#fff;
+}
+button{
+    align-content: center;
+    width:7rem;
+    aspect-ratio: 1;
+    margin:.8rem;
+    color:#fff;
+    background: rgba(0,0,0,0.7);
+    font-size: 2.4rem;
+    cursor: pointer;
+    border:.1rem solid rgba(255,255,255,0.2);
+    border-radius:50%;
+    text-shadow: 0rem .1rem .5rem rgba(0,0,0,0.2);
+    box-shadow: -.1rem .2rem 1rem rgba(0,0,0,0.5) ;
+}
+.ac,.del{
+    font-size:2rem;
+}
+button:hover{
+    color:#fff;
+    background: #f67c14;
+}
+.equalBtn{
+    background:#f67c14;
+}
+.operator{
+    color:#f67c14;
+}
